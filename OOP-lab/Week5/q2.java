@@ -3,11 +3,10 @@ import java.util.Scanner;
 public class String_Test {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter the Number : ");
-		String inp=sc.next();
+		String inp=br.readLine();
 		StringBuilder str=new StringBuilder(inp);
-		
 		int c=0;
 		for(int i=str.length()-1; i>=0; i--)
 		{
